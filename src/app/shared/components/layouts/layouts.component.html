@@ -1,0 +1,62 @@
+<mat-toolbar *ngIf="isMobile">
+  <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1>Natureza CDF</h1>
+</mat-toolbar>
+
+<mat-sidenav-container autosize>
+  <mat-sidenav [opened]="true" mode="side">
+    <button class="entry" mat-icon-button aria-label="Menu icon" (click)="toggleMenu()" *ngIf="!isMobile">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-nav-list>
+      <a href="/dashboard" mat-list-item>
+        <span class="entry">
+           <mat-icon>house</mat-icon>
+           <span *ngIf="!isCollapsed">Dashboard</span>
+        </span>
+     </a>
+     <a mat-list-item>
+      <span class="entry">
+         <mat-icon>book</mat-icon>
+         <span *ngIf="!isCollapsed">Plano de Estudo</span>
+      </span>
+   </a>
+   <a href="/aulas" mat-list-item>
+    <span class="entry">
+       <mat-icon>live_tv</mat-icon>
+       <span *ngIf="!isCollapsed">Aulas</span>
+    </span>
+ </a>
+ <a mat-list-item>
+  <span class="entry">
+     <mat-icon>library_books</mat-icon>
+     <span *ngIf="!isCollapsed">Simulados</span>
+  </span>
+</a>
+<a mat-list-item>
+  <span class="entry">
+     <mat-icon>person</mat-icon>
+     <span *ngIf="!isCollapsed">Área do Aluno</span>
+  </span>
+</a>
+<a mat-list-item>
+  <span class="entry">
+     <mat-icon>logout</mat-icon>
+     <span *ngIf="!isCollapsed">Sair</span>
+  </span>
+</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div *ngIf="!isMobile">
+      <h2>Ola Nilson, Aqui é seu Dashboard</h2>
+      <mat-divider></mat-divider>
+      </div>
+
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

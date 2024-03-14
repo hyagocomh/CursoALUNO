@@ -1,0 +1,50 @@
+h1 {
+  padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+mat-toolbar{
+  background-color: #ffff;
+  position:fixed;
+  top:0;
+  z-index: 2;
+}
+
+mat-sidenav-container {
+  height:100%;
+}
+
+mat-sidenav {
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+    margin-top: -40px;
+  }
+
+  .entry{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding:0.75rem;
+  }
+}
+
+mat-sidenav-content{
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 80px;
+  background-color: #bcc4ca;
+  @media screen and (min-width: 600px) {
+      padding-top: 0rem;
+  }
+}
+
+
+.mobile-toolbar {
+  background-color: #3498db; /* Cor de fundo para dispositivos móveis */
+}
+
+/* Estilos para desktop */
+.desktop-toolbar {
+  background-color: #2ecc71; /* Cor de fundo para desktop */
+}
