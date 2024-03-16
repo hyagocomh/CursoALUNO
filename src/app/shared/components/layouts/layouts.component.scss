@@ -48,3 +48,14 @@ mat-sidenav-content{
 .desktop-toolbar {
   background-color: #2ecc71; /* Cor de fundo para desktop */
 }
+
+
+.entry{ 
+  font-weight: bold; 
+  color: #26DB00;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.entry:hover{
+  background-color: #1e693d;
+}
