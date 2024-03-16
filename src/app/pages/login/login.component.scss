@@ -1,0 +1,102 @@
+.container{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url(/assets/img/Design\ sem\ nome1.png);
+    background-size: cover;
+}
+
+.login-container {
+    width: 300px;
+    flex: 1;
+    box-sizing: border-box; 
+    position: relative;
+    top: 150px;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    text-align: left;
+    
+}
+
+//BARRA EMAIL E SENHA
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    font-size: 18px;
+    width: 120%;
+    padding: 17px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    font-size: 15px;
+}
+
+//BOTÃO E ESQUECI A SENHA
+.login-container button {
+    width: 40%;
+    height: 30%;
+    padding: 17px;
+    font-size: 18px;
+    font-weight: bold ; 
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #26DB00;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button {
+    position: relative;
+    top: -20px;
+}
+
+.login-container button:hover {
+    background-color: #1f7e0c;
+}
+
+.login-container .forgot-password {
+    position: relative;
+    top: 18px;
+    left: 55px;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    line-height: auto;
+}
+
+//IMG
+
+img{
+    flex: 1;
+    text-align: center;
+}
+
+
+//MOBILE
+
+@media screen and (max-width:1135px){
+    .container{
+      max-width: 90%;
+    }
+    
+    .login-container{
+        position: relative;
+        left: 100px;
+        top: -5%;
+    }
+    .imgDesktop{
+        display: none;
+    }
+}
