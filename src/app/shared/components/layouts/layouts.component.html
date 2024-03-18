@@ -7,44 +7,44 @@
 
 <mat-sidenav-container autosize>
   <mat-sidenav [opened]="true" mode="side">
-    <button class="entry" mat-icon-button aria-label="Menu icon" (click)="toggleMenu()" *ngIf="!isMobile">
+    <button class="entry" mat-icon-button aria-label="Menu icon" (click)="toggleMenu()" *ngIf="!isMobile" style="position: relative; left: 15px;">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-nav-list>
       <a href="/dashboard" mat-list-item>
         <span class="entry">
            <mat-icon>house</mat-icon>
-           <span *ngIf="!isCollapsed">Dashboard</span>
+           <span *ngIf="!isCollapsed">INÍCIO</span>
         </span>
      </a>
      <a mat-list-item>
       <span class="entry">
          <mat-icon>book</mat-icon>
-         <span *ngIf="!isCollapsed">Plano de Estudo</span>
+         <span *ngIf="!isCollapsed">PLANO DE ESTUDO</span>
       </span>
    </a>
    <a href="/aulas" mat-list-item>
     <span class="entry">
        <mat-icon>live_tv</mat-icon>
-       <span *ngIf="!isCollapsed">Aulas</span>
+       <span *ngIf="!isCollapsed">AULAS</span>
     </span>
  </a>
  <a mat-list-item>
   <span class="entry">
      <mat-icon>library_books</mat-icon>
-     <span *ngIf="!isCollapsed">Simulados</span>
+     <span *ngIf="!isCollapsed">SIMULADO</span>
   </span>
 </a>
 <a mat-list-item>
   <span class="entry">
      <mat-icon>person</mat-icon>
-     <span *ngIf="!isCollapsed">Área do Aluno</span>
+     <span *ngIf="!isCollapsed">ÁREA DO ALUNO</span>
   </span>
 </a>
 <a mat-list-item>
   <span class="entry">
      <mat-icon>logout</mat-icon>
-     <span *ngIf="!isCollapsed">Sair</span>
+     <span *ngIf="!isCollapsed">SAIR</span>
   </span>
 </a>
     </mat-nav-list>

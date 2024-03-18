@@ -63,7 +63,7 @@ label{
 }
 
 .login-container button:hover {
-    background-color: #1f7e0c;
+    background-color: #1e693d;
 }
 
 .login-container .forgot-password {
@@ -74,6 +74,16 @@ label{
     vertical-align: top;
     font-weight: bold;
     line-height: auto;
+}
+
+#forgot-password{
+    text-decoration: none;
+    color: 26DB00;
+}
+
+button a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 //IMG
