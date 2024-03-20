@@ -1,8 +1,17 @@
 <div class="div-aulas grid">
   <div class="materias col-12 md:col-3 p-fluid">
-  <mat-card>
-    <mat-accordion>
 
+  <mat-card>
+    <mat-card-header>
+      <label>Disciplinas</label>
+    </mat-card-header>
+    <mat-card-content>
+
+    </mat-card-content>
+  </mat-card>
+
+    <mat-card *ngIf="isMobile">
+    <mat-accordion>
       <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title>

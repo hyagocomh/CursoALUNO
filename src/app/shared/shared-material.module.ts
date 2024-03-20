@@ -9,6 +9,9 @@ import { MatListModule } from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 
@@ -24,7 +27,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatListModule,
     MatDividerModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   declarations: [],
   imports: [

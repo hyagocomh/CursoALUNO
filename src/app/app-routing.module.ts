@@ -18,6 +18,10 @@ children:[
   {
     path: 'aulas',
     loadChildren: () => import('./pages/aulas/aulas.module').then(m => m.AulasModule)
+  },
+  {
+    path: 'area-do-aluno',
+    loadChildren: () => import('./pages/area-do-aluno/area-do-aluno.module').then(m => m.AreaDoAlunoModule)
   }
 ]}
 ];
