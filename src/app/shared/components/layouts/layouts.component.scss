@@ -2,7 +2,12 @@ h1 {
   padding: 0 1rem;
 }
 
-h2 {padding: 1rem;}
+h2 {padding: 1rem;
+  font-family:"Baloo Bhai 2", Arial, sans-serif;
+}
+span{
+  font-family: Arial, sans-serif;
+}
 
 mat-toolbar{
   background-color: #ffff;
@@ -33,7 +38,7 @@ mat-sidenav-content{
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 80px;
-  background-color: #bcc4ca;
+  background-color: #ffff;
   @media screen and (min-width: 600px) {
       padding-top: 0rem;
   }
@@ -58,4 +63,7 @@ mat-sidenav-content{
 }
 .entry:hover{
   background-color: #1e693d;
+}
+span{
+  font-family: "Baloo Bhai 2";
 }

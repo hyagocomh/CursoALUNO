@@ -2,7 +2,7 @@
   <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()">
     <mat-icon>menu</mat-icon>
   </button>
-  <h1>Natureza CDF</h1>
+  <img src="/src/assets/img/Design sem nome1.png" alt="" style="width: 50px;">
 </mat-toolbar>
 
 <mat-sidenav-container autosize>
@@ -51,10 +51,9 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <div *ngIf="!isMobile">
-      <h2>Ola Nilson, Aqui é seu Dashboard</h2>
+      <h2>Olá Nilson! Aqui é seu Dashboard.</h2>
       <mat-divider></mat-divider>
       </div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
