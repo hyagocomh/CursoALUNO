@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './area-do-aluno.component.scss'
 })
 export class AreaDoAlunoComponent {
-
+  
 }
+
