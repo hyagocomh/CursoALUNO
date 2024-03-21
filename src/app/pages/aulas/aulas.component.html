@@ -1,7 +1,7 @@
 <div class="div-aulas grid">
   <div class="materias col-12 md:col-3 p-fluid">
 
-  <mat-card>
+  <mat-card *ngIf="!isMobile">
     <mat-card-header>
       <label>Disciplinas</label>
     </mat-card-header>
