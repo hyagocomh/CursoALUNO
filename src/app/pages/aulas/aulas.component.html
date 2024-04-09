@@ -5,13 +5,12 @@
     <mat-card-header>
       <label>Disciplinas</label>
     </mat-card-header>
-    <ul>
-      <li>Biologia</li>
-      <li>Quimica</li>
-      <li>Fisica</li>
-      <li>Matematica</li>
-    </ul>
     <mat-card-content>
+      <mat-nav-list>
+        @for (link of list; track link) {
+          <a mat-list-item href="..." >{{ link.title }}</a>
+        }
+      </mat-nav-list>
 
     </mat-card-content>
   </mat-card>
@@ -34,7 +33,7 @@
 </div>
   <mat-card class="div-assuntos col-12 md:col-9 p-fluid">
     <mat-card-content>
-       <mat-icon>menu_book</mat-icon>
+  <mat-icon>menu_book</mat-icon>
        <p>Escolha a Disciplina</p>
     </mat-card-content>
   </mat-card>

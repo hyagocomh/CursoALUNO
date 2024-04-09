@@ -22,6 +22,10 @@ children:[
   {
     path: 'area-do-aluno',
     loadChildren: () => import('./pages/area-do-aluno/area-do-aluno.module').then(m => m.AreaDoAlunoModule)
+  },
+  {
+    path: 'plano-estudo',
+    loadChildren: () => import('./pages/plano-estudo/plano-estudo.module').then(m => m.PlanoEstudoModule)
   }
 ]}
 ];

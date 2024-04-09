@@ -8,6 +8,36 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AulasComponent implements OnInit{
 
+  list = [
+    {
+      icon: "people",
+      title: "Total de Alunos",
+      amount: "50",
+      color: "primary",
+      router: "alunos",
+      isActive: true
+    },
+    {
+      icon: "attach_money",
+      title: "Valor Arrecadado",
+      amount: "R$ 3000,00",
+      color: "primary"
+    },
+    {
+      icon: "emoji_people",
+      title: "Professores Ativos",
+      amount: "5",
+      color: "accent",
+      router: "professores"
+    },
+    {
+      icon: "shopping_cart",
+      title: "Orders to deliver",
+      amount: "305 Orders",
+      color: "accent"
+    }
+  ];
+
   isMobile= true;
   isCollapsed = true;
 
