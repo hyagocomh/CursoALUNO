@@ -1,11 +1,11 @@
+*{
+    font-family: "Montserrat", Arial, sans-serif;   
+}
+
 @media (min-width: 1440px) {
     .container{
         margin: 0;
         padding: 0;
-    }
-    
-    h2{
-        font-family:"Montserrat", Arial, sans-serif;
     }
     
     .img-entrada{
@@ -19,6 +19,9 @@
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .videos__container{
+
     }
 
     .videos__item{

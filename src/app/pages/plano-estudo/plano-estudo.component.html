@@ -1,1 +1,62 @@
-<h1>tete</h1>
+<div class="contaier">
+    <div class="todo-container">
+        <h1>Faça seu horário!</h1>
+        <input type="text" id="todo-input" placeholder="14h - Física">
+        <div class="day-selector">
+          <label><input type="radio" name="day" value="monday" checked> Segunda-feira</label>
+          <label><input type="radio" name="day" value="tuesday"> Terça-feira</label>
+          <label><input type="radio" name="day" value="wednesday"> Quarta-feira</label>
+          <label><input type="radio" name="day" value="thursday"> Quinta-feira</label>
+          <label><input type="radio" name="day" value="friday"> Sexta-feira</label>
+        </div>
+        <button (click)="addTodo()">Adicionar horáro</button>
+
+      <div class="day-list">
+        <h2>Segunda-feira</h2>
+        <ul>
+          <li *ngFor="let todo of mondayTodos">
+            {{ todo.text }}
+            <span class="delete-btn" (click)="deleteTodo(todo.id, 'monday')">X</span>
+          </li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h2>Terça-feira</h2>
+        <ul>
+          <li *ngFor="let todo of tuesdayTodos">
+            {{ todo.text }}
+            <span class="delete-btn" (click)="deleteTodo(todo.id, 'tuesday')">X</span>
+          </li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h2>Quarta-feira</h2>
+        <ul>
+          <li *ngFor="let todo of wednesdayTodos">
+            {{ todo.text }}
+            <span class="delete-btn" (click)="deleteTodo(todo.id, 'wednesday')">X</span>
+          </li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h2>Quinta-feira</h2>
+        <ul>
+          <li *ngFor="let todo of thursdayTodos">
+            {{ todo.text }}
+            <span class="delete-btn" (click)="deleteTodo(todo.id, 'thursday')">X</span>
+          </li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h2>Sexta-feira</h2>
+        <ul>
+          <li *ngFor="let todo of fridayTodos">
+            {{ todo.text }}
+            <span class="delete-btn" (click)="deleteTodo(todo.id, 'friday')">X</span>
+          </li>
+        </ul>
+      </div>
+     
+            
+</div>
+  

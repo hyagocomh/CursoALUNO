@@ -1,31 +1,223 @@
-mat-card{
-  padding: 30px;
-  padding-top: 0;
-  font-family: "Montserrat", Arial, sans-serif;
-}
+.container {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #26DB00;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 45%; /* Definindo a largura de cada campo */
+    margin: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #form input[type="text"],
+  #form input[type="tel"] {
+    width: calc(100% - 8px); /* Para compensar o padding */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #26DB00;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold ; 
+  }
+  button[type="submit"]:hover {
+    transition: 0.5s;
+    background-color: #0058dbae;
+    color: #fff;
+  }
 
-mat-form-field{
-  width: 100%;
-}
+  
+  
+  #semComplemento {
+    margin-left: 5px;
+  }
 
-mat-form-field{
-  border-radius: 50px;
-}
+  //PLANOS
 
-.div-label{
-  width: 100%;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
+ 
+  .planos h2{
+    color: #26DB00;
+  }
 
-.button-all{
-  gap: 20px;
-}
+  .validade-plano{
+    display: flex;
+    margin-left: 10px;
+  }
 
-#button-edit{
-  background-color: #26DB00;
-  color: white;
-}
-#button-save:hover{
-    background-color: #25db003c;
-}
+  .descricao-validade{
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+
+  .renovar-plano{
+    position: relative;
+    right: 35px;
+  }
+
+  .planos .renovar-plano a{
+    width: 40%;
+    height: 30%;
+    padding: 17px;
+    font-size: 18px;
+    font-weight: bold ; 
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #26DB00;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    left: 23px;
+    top: 40px;
+  }
+
+  .planos .renovar-plano a:hover {
+    transition: 0.5s;
+    background-color: #0058dbae;
+    color: #fff;
+  }
+
+  .duvida-plano a{
+    color: green;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+  }
+  
+
+  .vertical-line {
+    border-left: 1px solid black; /* Altere a cor e a largura conforme necessário */
+    height: 100px; /* Defina a altura da linha vertical */
+    margin: 0 10px; /* Adapte a  margem conforme necessário */
+    position: relative;
+    right: 50px;
+    top: 10px;
+  }
+
+  //ALTERAR SENHA
+
+  .senha-foto{
+  
+  }
+
+  .alterar-senha input{
+    width: 20rem;
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+
+  .senha-plano{
+    position: relative;
+    
+  }
+
+  //foto
+
+  .profile-card {
+    width: 300px; /* Largura do card */
+    padding: 20px; /* Espaçamento interno */
+    height: 13rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #fff; /* Cor de fundo */
+    text-align: center; /* Para centralizar o conteúdo horizontalmente */
+    border: solid 1px #26DB00;
+  }
+  
+  .profile-picture {
+    position: relative; /* Para posicionamento relativo */
+    width: 180px; /* Tamanho da imagem */
+    height: 180px; /* Tamanho da imagem */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px; /* Centraliza e adiciona espaço abaixo da imagem */
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .change-button {
+    position: absolute; /* Para posicionamento absoluto */
+    bottom: -20px; /* Posiciona o botão abaixo da imagem */
+    left: 50%; /* Centraliza o botão horizontalmente */
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #26DB00;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .change-button:hover{
+    transition: 0.5s;
+    background-color: #0058dbae;
+  }
+
+  //apagar
+
+  .delete-account-section {
+    margin-top: 20px;
+  }
+  
+  .checkbox-container {
+    margin-bottom: 10px;
+  }
+  
+  #confirm-delete-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #confirm-delete-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .form-group {
+      display: block;
+      width: 100%; 
+    }
+  }

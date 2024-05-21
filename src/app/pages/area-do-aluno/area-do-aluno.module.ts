@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { SharedMaterialModule } from '../../shared/shared-material.module';
 import { AreaDoAlunoComponent } from './area-do-aluno.component';
 import { AreaDoAlunoRoutes } from './area-do-aluno-routing.module';
+import { FormsModule } from '@angular/forms'; 
 
 
 
@@ -14,7 +15,8 @@ import { AreaDoAlunoRoutes } from './area-do-aluno-routing.module';
   imports: [
     CommonModule,
     RouterModule.forChild(AreaDoAlunoRoutes),
-    SharedMaterialModule
+    SharedMaterialModule,
+    FormsModule
   ]
 })
 export class AreaDoAlunoModule { }

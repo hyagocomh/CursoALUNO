@@ -62,8 +62,19 @@ mat-sidenav-content{
   transition: background-color 0.3s ease;
 }
 .entry:hover{
-  background-color: #1e693d;
+  background-color: #f2f2f2;
 }
 span{
   font-family: "Baloo Bhai 2";
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  position: relative;
+  left: 25rem; 
+  top: 10px;
 }

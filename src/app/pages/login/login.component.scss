@@ -47,7 +47,7 @@ label{
 }
 
 //BOTÃO E ESQUECI A SENHA
-.login-container button {
+.login-container .button-login {
     width: 40%;
     height: 30%;
     padding: 17px;
@@ -57,20 +57,16 @@ label{
     border-radius: 10px;
     background-color: #26DB00;
     color: #FFFFFF;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-container button {
+.login-container  a .button-login {
     position: relative;
     top: -20px;
 }
 
-.login-container button:hover {
+.login-container .button-login:hover {
     background-color: #1e693d;
-}
-button a:hover{
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .login-container .forgot-password {
@@ -86,12 +82,6 @@ button a:hover{
 #forgot-password{
     text-decoration: none;
     color: 26DB00;
-}
-
-button a{
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: 500ms all;
 }
 
 //IMG

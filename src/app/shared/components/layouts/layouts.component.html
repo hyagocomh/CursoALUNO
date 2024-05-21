@@ -5,6 +5,7 @@
   <img src="/src/assets/img/Design sem nome1.png" alt="" style="width: 50px;">
 </mat-toolbar>
 
+
 <mat-sidenav-container autosize>
   <mat-sidenav [opened]="true" mode="side">
     <button class="entry" mat-icon-button aria-label="Menu icon" (click)="toggleMenu()" *ngIf="!isMobile" style="position: relative; left: 15px;">
@@ -20,7 +21,7 @@
      <a href="/plano-estudo" mat-list-item>
       <span class="entry">
          <mat-icon>book</mat-icon>
-         <span *ngIf="!isCollapsed">PLANO DE ESTUDO</span>
+         <span *ngIf="!isCollapsed">CRONOGRAMA</span>
       </span>
    </a>
    <a href="/aulas" mat-list-item>
@@ -51,10 +52,12 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div *ngIf="!isMobile">
+    <div class="header" *ngIf="!isMobile">
       <h2>Olá Nilson! Aqui é seu Dashboard.</h2>
+     <a href="/area-do-aluno"> <img src="assets/img/areaAluno/Eu.jpg" style="width: 70px; height: 70px; border-radius: 50%; " alt=""></a>
       <mat-divider></mat-divider>
-      </div>
+    </div>
+    <hr>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
