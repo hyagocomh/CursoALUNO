@@ -26,6 +26,14 @@ children:[
   {
     path: 'plano-estudo',
     loadChildren: () => import('./pages/plano-estudo/plano-estudo.module').then(m => m.PlanoEstudoModule)
+  },
+  {
+    path: 'simulado',
+    loadChildren: () => import('./pages/simulado/simulado.module').then(m => m.SimuladoModule)
+  },
+  {
+    path: 'plano',
+    loadChildren: () => import('./pages/plano/plano.module').then(m => m.PlanoModule)
   }
 ]}
 ];
