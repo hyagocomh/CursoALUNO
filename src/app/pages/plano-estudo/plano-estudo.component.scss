@@ -1,107 +1,133 @@
 .container {
-    font-family:"Montserrat", Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.todo-container {
+  max-width: 1190px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #26DB00;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #26DB00;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1ca100;
+  transform: scale(1.05);
+}
+
+.day-selector {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.day-selector label {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.day-list {
+  border: solid 2px #26DB00;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-list h2 {
+  margin-bottom: 10px;
+  color: #26DB00;
+  font-size: 24px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
   .todo-container {
-    max-width: 1190px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+      padding: 15px;
   }
-  
-  h1 {
-    text-align: center;
-    color: #26DB00;
-  }
-  
+
   input[type="text"] {
-    width: 98%;
-    padding: 10px;
-    border-radius: 10px;
+      margin-bottom: 15px;
   }
-  
+
   button {
-    padding: 8px 15px;
-    background-color: #ffffff;
-    color: #26DB00;
-    border: solid 2px;
-    cursor: pointer;
-    position: relative;
-    left: 10px;
-    font-weight: bold;
-    border-radius: 10px;
+      width: 100%;
   }
-  
-  button:hover {
-    transition: 0.5s;
-    background-color: #25db00ae;
-    color: #fff;
-  }
-  
-  .day-selector {
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
   .day-selector label {
-    margin-right: 20px;
-  }
-  
-  .day-list h2 {
-    margin-bottom: 5px;
-    color: #26DB00;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    padding: 8px;
-    margin-bottom: 5px;
-    background-color: #f9f9f9;
-    border-radius: 3px;
-  }
-  
-  .delete-btn {
-    color: red;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-
-  .day-list{
-    border: solid 2px #26DB00;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-
-  
-  @media screen and (max-width: 600px) {
-    .todo-container {
-      padding: 10px;
-    }
-  
-    input[type="text"] {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    button {
-      width: 100%;
-    }
-  
-    .day-selector label {
       display: block;
-      margin-bottom: 5px;
-    }
+      margin-bottom: 10px;
   }
-  
+
+  .day-list {
+      padding: 10px;
+  }
+}

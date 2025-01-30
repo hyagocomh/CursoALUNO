@@ -12,7 +12,7 @@ export class LayoutsComponent {
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
   isMobile= true;
-  isCollapsed = true;
+  isCollapsed = false;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
