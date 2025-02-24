@@ -1,3 +1,19 @@
+# 📜 Termos de Uso
+
+Este projeto é de minha autoria e está disponibilizado no GitHub para fins de aprendizado e colaboração. Ao acessar ou utilizar este repositório, você concorda com os seguintes termos:
+
+## ⚖️ Regras de Uso
+
+- **Uso Pessoal e Educacional**: Você pode visualizar, estudar e aprender com este código, desde que respeite os direitos autorais.
+- **🚫 Proibição de Plágio**: Não é permitido copiar, redistribuir ou apresentar este projeto como seu sem a devida autorização.
+- **🔄 Modificações e Forks**: Você pode fazer um fork para estudos e melhorias, desde que mencione o repositório original e dê os devidos créditos.
+- **💰 Uso Comercial**: Qualquer uso comercial do código requer permissão explícita do autor.
+- **📜 Licença**: Se houver uma licença específica neste repositório, os termos dela também se aplicam.
+
+⚠️ O descumprimento destas diretrizes pode resultar em medidas legais conforme as leis de propriedade intelectual. Para mais informações ou autorização para usos específicos, entre em contato comigo.
+
+🔗 **GitHub do Autor**: [hyagocomh](https://github.com/hyagocomh)
+
 # CursoAluno
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
